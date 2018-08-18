@@ -8,21 +8,6 @@
 
 import Cocoa
 
-struct Root: Decodable {
-    let arguments: Argument
-    let result: String
-}
-
-struct Argument: Decodable {
-    let torrents: [Torrent]
-}
-
-struct Torrent: Decodable {
-    let id: Int
-    let name: String
-    let totalSize: Int
-}
-
 class ViewController: NSViewController {
     
     @IBOutlet weak var tableView: NSTableView!
@@ -44,7 +29,7 @@ class ViewController: NSViewController {
     }
     
     @objc private func torrentGetAndUpdateTableView() {
-        updateTransmissionSessionId() { result in
+        getTransmissionSessionId() { result in
             torrentGet() { result in
                 if (result.count > 0)
                 {

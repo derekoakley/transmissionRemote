@@ -8,6 +8,7 @@
 
 import Cocoa
 
+// TODO: Make generic
 func torrentAdd(filename: String, completion: @escaping (Bool) -> ()) {
     let endpoint = "http://192.168.1.11:9092/transmission/rpc"
     let endpointUrl = URL(string: endpoint)!

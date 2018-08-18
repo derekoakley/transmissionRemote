@@ -42,5 +42,5 @@ func torrentGet(completion: @escaping ([Torrent]) -> ()) {
                 }
             }
         }
-        }.resume()
+    }.resume()
 }

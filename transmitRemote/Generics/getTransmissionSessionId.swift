@@ -8,7 +8,7 @@
 
 import Cocoa
 
-func updateTransmissionSessionId(completion: @escaping (Bool) -> ()) {
+func getTransmissionSessionId(completion: @escaping (Bool) -> ()) {
     let endpoint = "http://192.168.1.11:9092/transmission/rpc"
     let endpointUrl = URL(string: endpoint)!
     
@@ -28,5 +28,5 @@ func updateTransmissionSessionId(completion: @escaping (Bool) -> ()) {
                 completion(true)
             }
         }
-        }.resume()
+    }.resume()
 }

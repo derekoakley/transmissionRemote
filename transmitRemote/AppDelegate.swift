@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc private func handleGetURLEvent(event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
         let urlString = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))?.stringValue!
-        updateTransmissionSessionId() { result in
+        getTransmissionSessionId() { result in
             torrentAdd(filename: urlString!) { result in
                 if (result == true) {
                     NotificationCenter.default.post(name: Notification.Name("torrentGetAndUpdateTableView"), object: nil)
