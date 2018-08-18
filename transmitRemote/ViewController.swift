@@ -26,12 +26,13 @@ class ViewController: NSViewController {
         timer.setEventHandler {
             self.torrentGetAndUpdateTableView()
         }
+        
         // TODO: Try DispatchQueue.main.async everywhere
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
-        torrentGetAndUpdateTableView()
+        timer.activate()
     }
     
     override func viewDidDisappear() {
@@ -54,14 +55,6 @@ class ViewController: NSViewController {
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
-                }
-            }
-            sessionStats() { result in
-                if (result.activeTorrentCount > 0) {
-                    self.timer.activate()
-                }
-                else {
-                    self.timer.suspend()
                 }
             }
         }
