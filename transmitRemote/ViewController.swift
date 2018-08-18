@@ -20,24 +20,17 @@ class ViewController: NSViewController {
 
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(torrentGetAndUpdateTableView), name: Notification.Name("torrentGetAndUpdateTableView"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(willBecomeActive), name: NSApplication.willBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: NSApplication.willResignActiveNotification, object: nil)
         
         timer = DispatchSource.makeTimerSource()
         timer.schedule(deadline: .now(), repeating: .seconds(5), leeway: .seconds(5))
         timer.setEventHandler {
             self.torrentGetAndUpdateTableView()
         }
+        torrentGetAndUpdateTableView()
         
         // TODO: Try DispatchQueue.main.async everywhere
-    }
-    
-    override func viewDidAppear() {
-        super.viewDidAppear()
-        timer.activate()
-    }
-    
-    override func viewDidDisappear() {
-        super.viewDidAppear()
-        timer.suspend()
     }
 
     override var representedObject: Any? {
@@ -58,6 +51,14 @@ class ViewController: NSViewController {
                 }
             }
         }
+    }
+    
+    @objc private func willBecomeActive() {
+        timer.resume()
+    }
+    
+    @objc private func willResignActive() {
+        timer.suspend()
     }
 }
 
