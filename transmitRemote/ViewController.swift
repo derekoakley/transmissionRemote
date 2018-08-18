@@ -33,9 +33,17 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let aem = NSAppleEventManager.shared();
-        aem.setEventHandler(self, andSelector: #selector(handleGetURLEvent(event:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(torrentGetAndUpdateTableView), name: Notification.Name("torrentGetAndUpdateTableView"), object: nil)
+        torrentGetAndUpdateTableView()
+    }
+
+    override var representedObject: Any? {
+        didSet {
+        // Update the view, if already loaded.
+        }
+    }
+    
+    @objc private func torrentGetAndUpdateTableView() {
         updateTransmissionSessionId() { result in
             torrentGet() { result in
                 if (result.count > 0)
@@ -48,33 +56,6 @@ class ViewController: NSViewController {
             }
         }
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-    
-    @objc private func handleGetURLEvent(event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
-        let urlString = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))?.stringValue!
-        updateTransmissionSessionId() { result in
-            torrentAdd(filename: urlString!) { result in
-                if (result == true) {
-                    torrentGet() { result in
-                        if (result.count > 0)
-                        {
-                            self.Torrents = result
-                            DispatchQueue.main.async {
-                                self.tableView.reloadData()
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-
 }
 
 extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
