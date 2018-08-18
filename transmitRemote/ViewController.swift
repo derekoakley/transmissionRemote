@@ -37,7 +37,7 @@ class ViewController: NSViewController {
         aem.setEventHandler(self, andSelector: #selector(handleGetURLEvent(event:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
         
         updateTransmissionSessionId() { result in
-            self.torrentGet() { result in
+            torrentGet() { result in
                 if (result.count > 0)
                 {
                     self.Torrents = result
@@ -54,73 +54,13 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-    private func updateTransmissionSessionId(completion: @escaping (Bool) -> ()) {
-        let endpoint = "http://192.168.1.11:9092/transmission/rpc"
-        let endpointUrl = URL(string: endpoint)!
-        
-        var request = URLRequest(url: endpointUrl)
-        request.httpMethod = "POST"
-        
-        let transmissionSessionId = UserDefaults.standard.string(forKey: "transmissionSessionId")  ?? ""
-        request.addValue(transmissionSessionId, forHTTPHeaderField: "X-Transmission-Session-Id")
-        
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let httpResponse = response as? HTTPURLResponse {
-                if (httpResponse.statusCode == 409) {
-                    UserDefaults.standard.set(httpResponse.allHeaderFields[AnyHashable("X-Transmission-Session-Id")] as! String, forKey: "transmissionSessionId")
-                    completion(true)
-                }
-                if (httpResponse.statusCode == 200) {
-                    completion(true)
-                }
-            }
-        }.resume()
-    }
-    
-    private func torrentGet(completion: @escaping ([Torrent]) -> ()) {
-        let endpoint = "http://192.168.1.11:9092/transmission/rpc"
-        let endpointUrl = URL(string: endpoint)!
-        
-        var request = URLRequest(url: endpointUrl)
-        request.httpMethod = "POST"
-        request.httpBody = """
-        {
-            "arguments": {
-                "fields": [
-                    "id",
-                    "name",
-                    "totalSize"
-                ]
-            },
-            "method": "torrent-get"
-        }
-        """.data(using: .utf8)
-        
-        let transmissionSessionId = UserDefaults.standard.string(forKey: "transmissionSessionId")  ?? ""
-        request.addValue(transmissionSessionId, forHTTPHeaderField: "X-Transmission-Session-Id")
-        
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let httpResponse = response as? HTTPURLResponse {
-                if (httpResponse.statusCode == 200) {
-                    do {
-                        let result = try JSONDecoder().decode(Root.self, from: data!)
-                        completion(result.arguments.torrents)
-                    } catch {
-                        print(error)
-                        completion([])
-                    }
-                }
-            }
-        }.resume()
-    }
     
     @objc private func handleGetURLEvent(event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
         let urlString = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))?.stringValue!
         updateTransmissionSessionId() { result in
-            self.torrentAdd(filename: urlString!) { result in
+            torrentAdd(filename: urlString!) { result in
                 if (result == true) {
-                    self.torrentGet() { result in
+                    torrentGet() { result in
                         if (result.count > 0)
                         {
                             self.Torrents = result
@@ -134,35 +74,7 @@ class ViewController: NSViewController {
         }
     }
     
-    private func torrentAdd(filename: String, completion: @escaping (Bool) -> ()) {
-        let endpoint = "http://192.168.1.11:9092/transmission/rpc"
-        let endpointUrl = URL(string: endpoint)!
-        
-        var request = URLRequest(url: endpointUrl)
-        request.httpMethod = "POST"
-        request.httpBody = """
-            {
-            "arguments": {
-            "filename": "\(filename)"
-            },
-            "method": "torrent-add"
-            }
-            """.data(using: .utf8)
-        
-        let transmissionSessionId = UserDefaults.standard.string(forKey: "transmissionSessionId")  ?? ""
-        request.addValue(transmissionSessionId, forHTTPHeaderField: "X-Transmission-Session-Id")
-        
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let httpResponse = response as? HTTPURLResponse {
-                if (httpResponse.statusCode == 200) {
-                    completion(true)
-                }
-                else {
-                    completion(false)
-                }
-            }
-        }.resume()
-    }
+
 }
 
 extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
