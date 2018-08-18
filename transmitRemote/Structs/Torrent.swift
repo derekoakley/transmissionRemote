@@ -19,4 +19,5 @@ struct Torrent: Decodable {
     let id: Int
     let name: String
     let totalSize: Int
+    let percentDone: Double
 }

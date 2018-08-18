@@ -104,8 +104,9 @@
 		C2A873FD21283A36003B0F00 /* transmitRemote */ = {
 			isa = PBXGroup;
 			children = (
-				C2A8743121284D93003B0F00 /* Structs */,
+				C2A8743421285CE1003B0F00 /* Classes */,
 				C2A8742A21284014003B0F00 /* Generics */,
+				C2A8743121284D93003B0F00 /* Structs */,
 				C2A873FE21283A36003B0F00 /* AppDelegate.swift */,
 				C2A8740021283A36003B0F00 /* ViewController.swift */,
 				C2A8740221283A36003B0F00 /* Assets.xcassets */,
@@ -150,6 +151,13 @@
 				C2A8743221284DCE003B0F00 /* Torrent.swift */,
 			);
 			path = Structs;
+			sourceTree = "<group>";
+		};
+		C2A8743421285CE1003B0F00 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

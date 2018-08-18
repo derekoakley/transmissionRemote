@@ -17,10 +17,10 @@ func torrentAdd(filename: String, completion: @escaping (Bool) -> ()) {
     request.httpMethod = "POST"
     request.httpBody = """
         {
-        "arguments": {
-        "filename": "\(filename)"
-        },
-        "method": "torrent-add"
+            "arguments": {
+                "filename": "\(filename)"
+            },
+            "method": "torrent-add"
         }
         """.data(using: .utf8)
     

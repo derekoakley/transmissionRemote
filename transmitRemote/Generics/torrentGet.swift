@@ -20,7 +20,8 @@ func torrentGet(completion: @escaping ([Torrent]) -> ()) {
                 "fields": [
                     "id",
                     "name",
-                    "totalSize"
+                    "totalSize",
+                    "percentDone"
                 ]
             },
             "method": "torrent-get"
@@ -35,6 +36,7 @@ func torrentGet(completion: @escaping ([Torrent]) -> ()) {
             if (httpResponse.statusCode == 200) {
                 do {
                     let result = try JSONDecoder().decode(Root.self, from: data!)
+                    print(result.arguments.torrents)
                     completion(result.arguments.torrents)
                 } catch {
                     print(error)

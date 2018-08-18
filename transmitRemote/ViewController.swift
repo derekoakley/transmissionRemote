@@ -13,13 +13,31 @@ class ViewController: NSViewController {
     @IBOutlet weak var tableView: NSTableView!
     
     var Torrents: [Torrent] = []
+    var timer: DispatchSourceTimer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(torrentGetAndUpdateTableView), name: Notification.Name("torrentGetAndUpdateTableView"), object: nil)
-        torrentGetAndUpdateTableView()
+        
+        // TODO: Try DispatchQueue.main.async everywhere
+    }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        
+        timer = DispatchSource.makeTimerSource(queue: DispatchQueue.main)
+        timer.schedule(deadline: .now(), repeating: .seconds(5), leeway: .seconds(5))
+        timer.setEventHandler {
+            self.torrentGetAndUpdateTableView()
+        }
+        timer.activate()
+    }
+    
+    override func viewDidDisappear() {
+        super.viewDidAppear()
+        timer.suspend()
     }
 
     override var representedObject: Any? {
@@ -47,6 +65,8 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
     private struct TableColumns {
         static let id = NSUserInterfaceItemIdentifier("id")
         static let name = NSUserInterfaceItemIdentifier("name")
+        static let totalSize = NSUserInterfaceItemIdentifier("totalSize")
+        static let percentDone = NSUserInterfaceItemIdentifier("percentDone")
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
@@ -59,8 +79,10 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
             tableCell.textField?.stringValue = Torrents[row].id.description
         } else if (tableColumn!.identifier == TableColumns.name) {
             tableCell.textField?.stringValue = Torrents[row].name
-        } else {
+        } else if (tableColumn!.identifier == TableColumns.totalSize) {
             tableCell.textField?.stringValue = Torrents[row].totalSize.description
+        } else if (tableColumn!.identifier == TableColumns.percentDone) {
+            tableCell.textField?.stringValue = Torrents[row].percentDone.description
         }
         return tableCell
     }
