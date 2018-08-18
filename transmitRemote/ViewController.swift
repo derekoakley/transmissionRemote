@@ -21,18 +21,17 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(torrentGetAndUpdateTableView), name: Notification.Name("torrentGetAndUpdateTableView"), object: nil)
         
+        timer = DispatchSource.makeTimerSource()
+        timer.schedule(deadline: .now(), repeating: .seconds(5), leeway: .seconds(5))
+        timer.setEventHandler {
+            self.torrentGetAndUpdateTableView()
+        }
         // TODO: Try DispatchQueue.main.async everywhere
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
-        
-        timer = DispatchSource.makeTimerSource(queue: DispatchQueue.main)
-        timer.schedule(deadline: .now(), repeating: .seconds(5), leeway: .seconds(5))
-        timer.setEventHandler {
-            self.torrentGetAndUpdateTableView()
-        }
-        timer.activate()
+        torrentGetAndUpdateTableView()
     }
     
     override func viewDidDisappear() {
@@ -55,6 +54,14 @@ class ViewController: NSViewController {
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
+                }
+            }
+            sessionStats() { result in
+                if (result.activeTorrentCount > 0) {
+                    self.timer.activate()
+                }
+                else {
+                    self.timer.suspend()
                 }
             }
         }

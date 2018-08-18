@@ -1,5 +1,5 @@
 //
-//  torrentGet.swift
+//  torrentAdd.swift
 //  transmitRemote
 //
 //  Created by Derek Oakley on 18/08/2018.
@@ -8,7 +8,8 @@
 
 import Cocoa
 
-func torrentGet(completion: @escaping ([Torrent]) -> ()) {
+// TODO: Make generic
+func sessionStats(completion: @escaping (SessionStatsArgument) -> ()) {
     let endpoint = "http://192.168.1.11:9092/transmission/rpc"
     let endpointUrl = URL(string: endpoint)!
     
@@ -16,16 +17,7 @@ func torrentGet(completion: @escaping ([Torrent]) -> ()) {
     request.httpMethod = "POST"
     request.httpBody = """
         {
-            "arguments": {
-                "fields": [
-                    "id",
-                    "isFinished",
-                    "name",
-                    "percentDone",
-                    "totalSize"
-                ]
-            },
-            "method": "torrent-get"
+            "method": "session-stats"
         }
         """.data(using: .utf8)
     
@@ -36,11 +28,11 @@ func torrentGet(completion: @escaping ([Torrent]) -> ()) {
         if let httpResponse = response as? HTTPURLResponse {
             if (httpResponse.statusCode == 200) {
                 do {
-                    let result = try JSONDecoder().decode(TorrentGet.self, from: data!)
-                    completion(result.arguments.torrents)
+                    let result = try JSONDecoder().decode(SessionStats.self, from: data!)
+                    print(result.arguments)
+                    completion(result.arguments)
                 } catch {
                     print(error)
-                    completion([])
                 }
             }
         }

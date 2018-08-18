@@ -17,6 +17,8 @@
 		C2A8742E212840DB003B0F00 /* torrentGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8742D212840DA003B0F00 /* torrentGet.swift */; };
 		C2A8743021284122003B0F00 /* torrentAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8742F21284122003B0F00 /* torrentAdd.swift */; };
 		C2A8743321284DCE003B0F00 /* Torrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8743221284DCE003B0F00 /* Torrent.swift */; };
+		C2A87438212887FF003B0F00 /* sessionStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A87437212887FF003B0F00 /* sessionStats.swift */; };
+		C2A8743A21288895003B0F00 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8743921288895003B0F00 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		C2A8742D212840DA003B0F00 /* torrentGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = torrentGet.swift; sourceTree = "<group>"; };
 		C2A8742F21284122003B0F00 /* torrentAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = torrentAdd.swift; sourceTree = "<group>"; };
 		C2A8743221284DCE003B0F00 /* Torrent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Torrent.swift; sourceTree = "<group>"; };
+		C2A87437212887FF003B0F00 /* sessionStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sessionStats.swift; sourceTree = "<group>"; };
+		C2A8743921288895003B0F00 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		C2A8742A21284014003B0F00 /* Generics */ = {
 			isa = PBXGroup;
 			children = (
+				C2A87437212887FF003B0F00 /* sessionStats.swift */,
 				C2A8742B21284033003B0F00 /* getTransmissionSessionId.swift */,
 				C2A8742D212840DA003B0F00 /* torrentGet.swift */,
 				C2A8742F21284122003B0F00 /* torrentAdd.swift */,
@@ -148,6 +153,7 @@
 		C2A8743121284D93003B0F00 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8743921288895003B0F00 /* Session.swift */,
 				C2A8743221284DCE003B0F00 /* Torrent.swift */,
 			);
 			path = Structs;
@@ -297,7 +303,9 @@
 			files = (
 				C2A8740121283A36003B0F00 /* ViewController.swift in Sources */,
 				C2A8742E212840DB003B0F00 /* torrentGet.swift in Sources */,
+				C2A87438212887FF003B0F00 /* sessionStats.swift in Sources */,
 				C2A8743321284DCE003B0F00 /* Torrent.swift in Sources */,
+				C2A8743A21288895003B0F00 /* Session.swift in Sources */,
 				C2A8742C21284033003B0F00 /* getTransmissionSessionId.swift in Sources */,
 				C2A873FF21283A36003B0F00 /* AppDelegate.swift in Sources */,
 				C2A8743021284122003B0F00 /* torrentAdd.swift in Sources */,

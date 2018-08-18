@@ -6,18 +6,19 @@
 //  Copyright © 2018 Derek Oakley. All rights reserved.
 //
 
-struct Root: Decodable {
-    let arguments: Argument
+struct TorrentGet: Decodable {
+    let arguments: TorrentGetArgument
     let result: String
 }
 
-struct Argument: Decodable {
+struct TorrentGetArgument: Decodable {
     let torrents: [Torrent]
 }
 
 struct Torrent: Decodable {
     let id: Int
+    let isFinished: Bool
     let name: String
-    let totalSize: Int
     let percentDone: Double
+    let totalSize: Int
 }
