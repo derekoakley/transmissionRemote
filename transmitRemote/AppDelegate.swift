@@ -19,17 +19,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func torrentsWindowMenuItem(_ sender: NSMenuItem) {
         for window in NSApplication.shared.windows {
-            window.makeKeyAndOrderFront(self)
+            if (window.delegate?.isKind(of: NSWindowController.self)) == true {
+                window.makeKeyAndOrderFront(self)
+            }
         }
     }
     
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
         if (flag == false) {
             for window in sender.windows {
-                window.makeKeyAndOrderFront(self)
+                if (window.delegate?.isKind(of: NSWindowController.self)) == true {
+                    window.makeKeyAndOrderFront(self)
+                }
             }
         }
-        return true;
+        return false;
     }
     
     @objc private func handleGetURLEvent(event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
