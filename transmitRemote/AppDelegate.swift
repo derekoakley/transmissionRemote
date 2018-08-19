@@ -17,15 +17,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         aem.setEventHandler(self, andSelector: #selector(handleGetURLEvent(event:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
     }
     
+    @IBAction func torrentsWindowMenuItem(_ sender: NSMenuItem) {
+        for window in NSApplication.shared.windows {
+            window.makeKeyAndOrderFront(self)
+        }
+    }
+    
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
-        if flag == false {
+        if (flag == false) {
             for window in sender.windows {
-                if (window.delegate?.isKind(of: NSWindowController.self)) == true {
-                    window.makeKeyAndOrderFront(self)
-                }
+                window.makeKeyAndOrderFront(self)
             }
         }
-        return true
+        return true;
     }
     
     @objc private func handleGetURLEvent(event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
