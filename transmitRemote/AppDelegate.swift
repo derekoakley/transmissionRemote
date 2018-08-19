@@ -17,6 +17,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         aem.setEventHandler(self, andSelector: #selector(handleGetURLEvent(event:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
     }
     
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        if flag == false {
+            for window in sender.windows {
+                if (window.delegate?.isKind(of: NSWindowController.self)) == true {
+                    window.makeKeyAndOrderFront(self)
+                }
+            }
+        }
+        return true
+    }
+    
     @objc private func handleGetURLEvent(event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
         let urlString = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))?.stringValue!
         getTransmissionSessionId() { result in
