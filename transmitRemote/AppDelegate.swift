@@ -10,12 +10,6 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
-        let aem = NSAppleEventManager.shared();
-        aem.setEventHandler(self, andSelector: #selector(handleGetURLEvent(event:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
-    }
     
     @IBAction func torrentsWindowMenuItem(_ sender: NSMenuItem) {
         for window in NSApplication.shared.windows {
@@ -23,6 +17,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 window.makeKeyAndOrderFront(self)
             }
         }
+    }
+
+    func applicationWillFinishLaunching(_ aNotification: Notification) {
+        // Insert code here to initialize your application
+        NSAppleEventManager.shared().setEventHandler(
+            self,
+            andSelector: #selector(AppDelegate.handleGetURLEvent(event:replyEvent:)),
+            forEventClass: AEEventClass(kInternetEventClass),
+            andEventID: AEEventID(kAEGetURL)
+        )
     }
     
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
