@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003AB21004E64DD4C5A6FEC26A8F3D64 /* DiffAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC341B53CB37AA0EA0DBC04BC54B9615 /* DiffAware.swift */; };
+		1D53AA43EAF0CA41DBFB7B27C20F0C14 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		32D6395025379BAD9377DD30FF683ECC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		39A4491704BCB8ABB3FCBC331AE7A5B6 /* DeepDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDE0C694414EB6931EDBCEABB6B52B /* DeepDiff.swift */; };
+		40A9BA809273A7E73D1CAD1C66AB1F04 /* Heckel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4FB342258F15A1FC0812DBF979D50F /* Heckel.swift */; };
+		4A6DDF4C89084CDFC02AD28768EFCC48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		5AEE0718CC617E9D887AA9716A87D449 /* Pods-transmitRemoteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33DE458157FC6CCAAE2C707DD16B5A41 /* Pods-transmitRemoteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E21D87B4AD22481993720396CB9D2C /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16253A4C3CD429881B3486DFF62F356 /* Change.swift */; };
+		802D56D8A97BCE7827ED8D0387430143 /* Pods-transmitRemote-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04802D4BB2E5173697FAC3A44E134CC2 /* Pods-transmitRemote-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A80BAE767FDBBD31A89D22C288265BB /* DeepDiff-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B067010B3C159302095A824279FCB1D /* DeepDiff-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D20D3D57CDD757B09E390C69BBCE94E /* DeepDiff-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4CFB6CD2BA8DFEE7520F30A2D57BBA /* DeepDiff-dummy.m */; };
+		9D91D662F40243107216AB70D179F4A1 /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE95B9276374C33E2397C4476029F2 /* WagnerFischer.swift */; };
+		A498774D569397CA1516687D195B7BAC /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7021B6953007401322DAB5BA9F76E9 /* Array+Extensions.swift */; };
+		AAA03A10FACE67E311715DE2241BE38A /* MoveReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10BD48B205C6D10104DBCA22E00013 /* MoveReducer.swift */; };
+		AF4D7705C76EB5288034A23F62C13BEA /* Pods-transmitRemoteTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDA508B01D1F7F44542CC8EFAB25342 /* Pods-transmitRemoteTests-dummy.m */; };
+		B0DBC8C4CD7A00E68C1597736B204C07 /* Pods-transmitRemoteUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C90C1780DCDCB03DC2DDF6EBF279BD9 /* Pods-transmitRemoteUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B773411A251BBC0FE1234579025F2FAA /* Pods-transmitRemote-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FF885D3D3C987D55D27E7A398D180C /* Pods-transmitRemote-dummy.m */; };
+		C5E327B42C7E30D7501459B02B5F9140 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		F810C9846777D9B2AB74DB6EA011C953 /* Pods-transmitRemoteUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B4E893EA23F3E93B3E9851BDA41154 /* Pods-transmitRemoteUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		395E679F9591B84265C0E03EA0F609F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575A2767818B8485F30A184C1715B08D;
+			remoteInfo = "Pods-transmitRemote";
+		};
+		A3DAF0CA0D33C911B649893361D4D7A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D0D000DDE842320EDBA73D48DEA0324;
+			remoteInfo = DeepDiff;
+		};
+		DEE2213C51BF21C5210773EB703063B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575A2767818B8485F30A184C1715B08D;
+			remoteInfo = "Pods-transmitRemote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04802D4BB2E5173697FAC3A44E134CC2 /* Pods-transmitRemote-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-transmitRemote-umbrella.h"; sourceTree = "<group>"; };
+		09939D1B16BFAB8854647CD0C5CA3F59 /* Pods-transmitRemoteUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-transmitRemoteUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C13A25D2D26FAA44E3D6060565A7A4C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10F7F9551A7A05361E8FE6046D631B9D /* Pods_transmitRemoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_transmitRemoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12AD14927B623263C3456FD86B3A1358 /* Pods_transmitRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_transmitRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E3FD45F7D1512474401708B62B69B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1AC1E2903F2BEB82B25CC68A1577BA /* Pods-transmitRemoteTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-transmitRemoteTests-resources.sh"; sourceTree = "<group>"; };
+		2C5523D5C6F34AE6938CA2FC6C985343 /* Pods-transmitRemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-transmitRemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F28C529A666CF8AA761790909C3192D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301EA60236EF5457339905B4F05F29E2 /* Pods-transmitRemoteUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-transmitRemoteUITests-frameworks.sh"; sourceTree = "<group>"; };
+		33DE458157FC6CCAAE2C707DD16B5A41 /* Pods-transmitRemoteTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-transmitRemoteTests-umbrella.h"; sourceTree = "<group>"; };
+		39EE319FA44B5AB5BAA7A8240A45B291 /* Pods-transmitRemote-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-transmitRemote-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3A0FDBBEC4B7F1DF19DB43322FA111D5 /* Pods-transmitRemoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-transmitRemoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E8AC8A27865D8ACFCB2D8A9E04E4D44 /* Pods-transmitRemote-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-transmitRemote-acknowledgements.plist"; sourceTree = "<group>"; };
+		3EDE9EFC3726EBEDC12B4EB4F8786CB9 /* DeepDiff.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DeepDiff.modulemap; sourceTree = "<group>"; };
+		4549E24A83539728CA72F2FF9F19CE11 /* DeepDiff-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeepDiff-prefix.pch"; sourceTree = "<group>"; };
+		458D5230D37197EFE7AB33EAE3901F8F /* Pods_transmitRemoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_transmitRemoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E743F5817F0D31E005E011EAF104DA /* Pods-transmitRemoteUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-transmitRemoteUITests.modulemap"; sourceTree = "<group>"; };
+		536566BF8CF9EA33326C8490C418DAAA /* Pods-transmitRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-transmitRemote.release.xcconfig"; sourceTree = "<group>"; };
+		5C7021B6953007401322DAB5BA9F76E9 /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extensions.swift"; path = "Sources/Shared/Array+Extensions.swift"; sourceTree = "<group>"; };
+		6A4FB342258F15A1FC0812DBF979D50F /* Heckel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Heckel.swift; path = Sources/Shared/Algorithms/Heckel.swift; sourceTree = "<group>"; };
+		71FF885D3D3C987D55D27E7A398D180C /* Pods-transmitRemote-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-transmitRemote-dummy.m"; sourceTree = "<group>"; };
+		7C90C1780DCDCB03DC2DDF6EBF279BD9 /* Pods-transmitRemoteUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-transmitRemoteUITests-umbrella.h"; sourceTree = "<group>"; };
+		80217A94D46B95FD703378648E6DF45A /* DeepDiff.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeepDiff.xcconfig; sourceTree = "<group>"; };
+		82ABA33138B28D4775F3F01F51451FB0 /* Pods-transmitRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-transmitRemote.debug.xcconfig"; sourceTree = "<group>"; };
+		858892923E14C3E09601F07182FF25AC /* Pods-transmitRemoteTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-transmitRemoteTests.modulemap"; sourceTree = "<group>"; };
+		8B067010B3C159302095A824279FCB1D /* DeepDiff-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeepDiff-umbrella.h"; sourceTree = "<group>"; };
+		920F98357A4228B4EAD3733BD9BAC571 /* Pods-transmitRemoteTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-transmitRemoteTests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98EDE0C694414EB6931EDBCEABB6B52B /* DeepDiff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeepDiff.swift; path = Sources/Shared/DeepDiff.swift; sourceTree = "<group>"; };
+		A4B4E893EA23F3E93B3E9851BDA41154 /* Pods-transmitRemoteUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-transmitRemoteUITests-dummy.m"; sourceTree = "<group>"; };
+		A6EE95B9276374C33E2397C4476029F2 /* WagnerFischer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WagnerFischer.swift; path = Sources/Shared/Algorithms/WagnerFischer.swift; sourceTree = "<group>"; };
+		AA10BD48B205C6D10104DBCA22E00013 /* MoveReducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoveReducer.swift; path = Sources/Shared/MoveReducer.swift; sourceTree = "<group>"; };
+		B12E5370B4858CCD86B5718B29AEA79C /* Pods-transmitRemoteUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-transmitRemoteUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B2B93C5C7671A4E2C77E22609908B2D0 /* Pods-transmitRemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-transmitRemoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDB4F4D13691B4C8E2367040BB419276 /* Pods-transmitRemoteTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-transmitRemoteTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE37FC62D05A441580744DF509CC90AC /* Pods-transmitRemote-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-transmitRemote-resources.sh"; sourceTree = "<group>"; };
+		D16253A4C3CD429881B3486DFF62F356 /* Change.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Change.swift; path = Sources/Shared/Change.swift; sourceTree = "<group>"; };
+		DD4CFB6CD2BA8DFEE7520F30A2D57BBA /* DeepDiff-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeepDiff-dummy.m"; sourceTree = "<group>"; };
+		DE085104FC988BBE400F21FF1E357555 /* Pods-transmitRemoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-transmitRemoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE12DAB34DC612C09A2A68A576E0BF62 /* Pods-transmitRemoteTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-transmitRemoteTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		E3CE8E7BBA10ABC9458218F24BF5B129 /* DeepDiff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeepDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC96273FEB30279D307FB0818E3060EF /* Pods-transmitRemote-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-transmitRemote-frameworks.sh"; sourceTree = "<group>"; };
+		ED3AF0BA49B527C06A05128EDE255254 /* Pods-transmitRemoteUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-transmitRemoteUITests-resources.sh"; sourceTree = "<group>"; };
+		F35E4EB8C9F9B902C5DEFD0419247938 /* Pods-transmitRemote.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-transmitRemote.modulemap"; sourceTree = "<group>"; };
+		FC341B53CB37AA0EA0DBC04BC54B9615 /* DiffAware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiffAware.swift; path = Sources/Shared/Algorithms/DiffAware.swift; sourceTree = "<group>"; };
+		FCDA508B01D1F7F44542CC8EFAB25342 /* Pods-transmitRemoteTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-transmitRemoteTests-dummy.m"; sourceTree = "<group>"; };
+		FCE38F1F0B8CBA701772C7B528C62BA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F5647A97A7ECE2FD7EC940B8A0DF9B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D6395025379BAD9377DD30FF683ECC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A18BC828F8E47181AFF081296337252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5E327B42C7E30D7501459B02B5F9140 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C21CC1BAE0856C1EDFFCDC518A42DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D53AA43EAF0CA41DBFB7B27C20F0C14 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C131042B51FB5747EA6291BB7CCEDB1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6DDF4C89084CDFC02AD28768EFCC48 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1306A5B70FB3FDFD7C682C9A31CA718A /* Pods-transmitRemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C13A25D2D26FAA44E3D6060565A7A4C /* Info.plist */,
+				858892923E14C3E09601F07182FF25AC /* Pods-transmitRemoteTests.modulemap */,
+				DE12DAB34DC612C09A2A68A576E0BF62 /* Pods-transmitRemoteTests-acknowledgements.markdown */,
+				BDB4F4D13691B4C8E2367040BB419276 /* Pods-transmitRemoteTests-acknowledgements.plist */,
+				FCDA508B01D1F7F44542CC8EFAB25342 /* Pods-transmitRemoteTests-dummy.m */,
+				920F98357A4228B4EAD3733BD9BAC571 /* Pods-transmitRemoteTests-frameworks.sh */,
+				2C1AC1E2903F2BEB82B25CC68A1577BA /* Pods-transmitRemoteTests-resources.sh */,
+				33DE458157FC6CCAAE2C707DD16B5A41 /* Pods-transmitRemoteTests-umbrella.h */,
+				2C5523D5C6F34AE6938CA2FC6C985343 /* Pods-transmitRemoteTests.debug.xcconfig */,
+				B2B93C5C7671A4E2C77E22609908B2D0 /* Pods-transmitRemoteTests.release.xcconfig */,
+			);
+			name = "Pods-transmitRemoteTests";
+			path = "Target Support Files/Pods-transmitRemoteTests";
+			sourceTree = "<group>";
+		};
+		24C3F754C679F9E04BB89ECBCAB187D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EDE9EFC3726EBEDC12B4EB4F8786CB9 /* DeepDiff.modulemap */,
+				80217A94D46B95FD703378648E6DF45A /* DeepDiff.xcconfig */,
+				DD4CFB6CD2BA8DFEE7520F30A2D57BBA /* DeepDiff-dummy.m */,
+				4549E24A83539728CA72F2FF9F19CE11 /* DeepDiff-prefix.pch */,
+				8B067010B3C159302095A824279FCB1D /* DeepDiff-umbrella.h */,
+				FCE38F1F0B8CBA701772C7B528C62BA3 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DeepDiff";
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AC8429882A95AA0810A9DCDED54FF /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		412F52F4AC4C7D191E161A8ACC3D1399 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F93D026E4F255E2E9360C7C80628BBF4 /* Pods-transmitRemote */,
+				1306A5B70FB3FDFD7C682C9A31CA718A /* Pods-transmitRemoteTests */,
+				D96A7243B971894599F29316FEB078BC /* Pods-transmitRemoteUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				FE95DD6D77AC1A5370DE1D5D1CFB7EB2 /* Pods */,
+				E89042F1B7376DA4D7E43D3E9540D71F /* Products */,
+				412F52F4AC4C7D191E161A8ACC3D1399 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D96A7243B971894599F29316FEB078BC /* Pods-transmitRemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F28C529A666CF8AA761790909C3192D /* Info.plist */,
+				45E743F5817F0D31E005E011EAF104DA /* Pods-transmitRemoteUITests.modulemap */,
+				B12E5370B4858CCD86B5718B29AEA79C /* Pods-transmitRemoteUITests-acknowledgements.markdown */,
+				09939D1B16BFAB8854647CD0C5CA3F59 /* Pods-transmitRemoteUITests-acknowledgements.plist */,
+				A4B4E893EA23F3E93B3E9851BDA41154 /* Pods-transmitRemoteUITests-dummy.m */,
+				301EA60236EF5457339905B4F05F29E2 /* Pods-transmitRemoteUITests-frameworks.sh */,
+				ED3AF0BA49B527C06A05128EDE255254 /* Pods-transmitRemoteUITests-resources.sh */,
+				7C90C1780DCDCB03DC2DDF6EBF279BD9 /* Pods-transmitRemoteUITests-umbrella.h */,
+				3A0FDBBEC4B7F1DF19DB43322FA111D5 /* Pods-transmitRemoteUITests.debug.xcconfig */,
+				DE085104FC988BBE400F21FF1E357555 /* Pods-transmitRemoteUITests.release.xcconfig */,
+			);
+			name = "Pods-transmitRemoteUITests";
+			path = "Target Support Files/Pods-transmitRemoteUITests";
+			sourceTree = "<group>";
+		};
+		E89042F1B7376DA4D7E43D3E9540D71F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3CE8E7BBA10ABC9458218F24BF5B129 /* DeepDiff.framework */,
+				12AD14927B623263C3456FD86B3A1358 /* Pods_transmitRemote.framework */,
+				10F7F9551A7A05361E8FE6046D631B9D /* Pods_transmitRemoteTests.framework */,
+				458D5230D37197EFE7AB33EAE3901F8F /* Pods_transmitRemoteUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F09C27DCD83E43159441950505F9CE8D /* DeepDiff */ = {
+			isa = PBXGroup;
+			children = (
+				5C7021B6953007401322DAB5BA9F76E9 /* Array+Extensions.swift */,
+				D16253A4C3CD429881B3486DFF62F356 /* Change.swift */,
+				98EDE0C694414EB6931EDBCEABB6B52B /* DeepDiff.swift */,
+				FC341B53CB37AA0EA0DBC04BC54B9615 /* DiffAware.swift */,
+				6A4FB342258F15A1FC0812DBF979D50F /* Heckel.swift */,
+				AA10BD48B205C6D10104DBCA22E00013 /* MoveReducer.swift */,
+				A6EE95B9276374C33E2397C4476029F2 /* WagnerFischer.swift */,
+				24C3F754C679F9E04BB89ECBCAB187D5 /* Support Files */,
+			);
+			path = DeepDiff;
+			sourceTree = "<group>";
+		};
+		F93D026E4F255E2E9360C7C80628BBF4 /* Pods-transmitRemote */ = {
+			isa = PBXGroup;
+			children = (
+				28E3FD45F7D1512474401708B62B69B5 /* Info.plist */,
+				F35E4EB8C9F9B902C5DEFD0419247938 /* Pods-transmitRemote.modulemap */,
+				39EE319FA44B5AB5BAA7A8240A45B291 /* Pods-transmitRemote-acknowledgements.markdown */,
+				3E8AC8A27865D8ACFCB2D8A9E04E4D44 /* Pods-transmitRemote-acknowledgements.plist */,
+				71FF885D3D3C987D55D27E7A398D180C /* Pods-transmitRemote-dummy.m */,
+				EC96273FEB30279D307FB0818E3060EF /* Pods-transmitRemote-frameworks.sh */,
+				CE37FC62D05A441580744DF509CC90AC /* Pods-transmitRemote-resources.sh */,
+				04802D4BB2E5173697FAC3A44E134CC2 /* Pods-transmitRemote-umbrella.h */,
+				82ABA33138B28D4775F3F01F51451FB0 /* Pods-transmitRemote.debug.xcconfig */,
+				536566BF8CF9EA33326C8490C418DAAA /* Pods-transmitRemote.release.xcconfig */,
+			);
+			name = "Pods-transmitRemote";
+			path = "Target Support Files/Pods-transmitRemote";
+			sourceTree = "<group>";
+		};
+		FA7AC8429882A95AA0810A9DCDED54FF /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		FE95DD6D77AC1A5370DE1D5D1CFB7EB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F09C27DCD83E43159441950505F9CE8D /* DeepDiff */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3822E8C6F37BFF0E75D6B33FE31A12A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEE0718CC617E9D887AA9716A87D449 /* Pods-transmitRemoteTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BB2696BA2AD8127F1439B9C069DFDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0DBC8C4CD7A00E68C1597736B204C07 /* Pods-transmitRemoteUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57A3BF1941F218C9593F9E1C633170D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A80BAE767FDBBD31A89D22C288265BB /* DeepDiff-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D19D7F08850B45ADA83342CAB712C70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				802D56D8A97BCE7827ED8D0387430143 /* Pods-transmitRemote-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D0D000DDE842320EDBA73D48DEA0324 /* DeepDiff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4076CB089390B7AE66AD599DDBC138E /* Build configuration list for PBXNativeTarget "DeepDiff" */;
+			buildPhases = (
+				57A3BF1941F218C9593F9E1C633170D7 /* Headers */,
+				1C85BAC5346C4CB7A25470D795784765 /* Sources */,
+				0F5647A97A7ECE2FD7EC940B8A0DF9B3 /* Frameworks */,
+				AF9DCA3C31E2EEEDCC79AEC237CCD5C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepDiff;
+			productName = DeepDiff;
+			productReference = E3CE8E7BBA10ABC9458218F24BF5B129 /* DeepDiff.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		575A2767818B8485F30A184C1715B08D /* Pods-transmitRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2752BBA32298A84D5909739F276EE07A /* Build configuration list for PBXNativeTarget "Pods-transmitRemote" */;
+			buildPhases = (
+				8D19D7F08850B45ADA83342CAB712C70 /* Headers */,
+				5D80ED941A6C368AC6B3934560B4D8FE /* Sources */,
+				82C21CC1BAE0856C1EDFFCDC518A42DA /* Frameworks */,
+				559488B5CF37990DC3D688C46C0C1D52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A58383A22BE2E5431D96158CA6B3161 /* PBXTargetDependency */,
+			);
+			name = "Pods-transmitRemote";
+			productName = "Pods-transmitRemote";
+			productReference = 12AD14927B623263C3456FD86B3A1358 /* Pods_transmitRemote.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9116E24611B9C9FBB19E1CA6258E91DE /* Pods-transmitRemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D7E5101FE9130DEF13684266FF79C66 /* Build configuration list for PBXNativeTarget "Pods-transmitRemoteUITests" */;
+			buildPhases = (
+				46BB2696BA2AD8127F1439B9C069DFDD /* Headers */,
+				CE3AE12C0E1BC26924929F649FEF2BAE /* Sources */,
+				6A18BC828F8E47181AFF081296337252 /* Frameworks */,
+				1C600ACC8DB30F4A03466AB22F90CBAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6163CDDA469C3801D6D23C6F773A3504 /* PBXTargetDependency */,
+			);
+			name = "Pods-transmitRemoteUITests";
+			productName = "Pods-transmitRemoteUITests";
+			productReference = 458D5230D37197EFE7AB33EAE3901F8F /* Pods_transmitRemoteUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F69B5D8B10C1A97D7B477FAF360A4371 /* Pods-transmitRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD17806EA35CE6A181353B3A968D31B8 /* Build configuration list for PBXNativeTarget "Pods-transmitRemoteTests" */;
+			buildPhases = (
+				3822E8C6F37BFF0E75D6B33FE31A12A5 /* Headers */,
+				DA3F39B440C8533EC1AE3B8D810042C8 /* Sources */,
+				C131042B51FB5747EA6291BB7CCEDB1B /* Frameworks */,
+				8CEC561BD1776FCD82FF7662B1E3CA3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34D70C7949D60951C8F9DA8BEA1D1DEC /* PBXTargetDependency */,
+			);
+			name = "Pods-transmitRemoteTests";
+			productName = "Pods-transmitRemoteTests";
+			productReference = 10F7F9551A7A05361E8FE6046D631B9D /* Pods_transmitRemoteTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E89042F1B7376DA4D7E43D3E9540D71F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D0D000DDE842320EDBA73D48DEA0324 /* DeepDiff */,
+				575A2767818B8485F30A184C1715B08D /* Pods-transmitRemote */,
+				F69B5D8B10C1A97D7B477FAF360A4371 /* Pods-transmitRemoteTests */,
+				9116E24611B9C9FBB19E1CA6258E91DE /* Pods-transmitRemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C600ACC8DB30F4A03466AB22F90CBAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559488B5CF37990DC3D688C46C0C1D52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CEC561BD1776FCD82FF7662B1E3CA3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9DCA3C31E2EEEDCC79AEC237CCD5C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C85BAC5346C4CB7A25470D795784765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A498774D569397CA1516687D195B7BAC /* Array+Extensions.swift in Sources */,
+				66E21D87B4AD22481993720396CB9D2C /* Change.swift in Sources */,
+				9D20D3D57CDD757B09E390C69BBCE94E /* DeepDiff-dummy.m in Sources */,
+				39A4491704BCB8ABB3FCBC331AE7A5B6 /* DeepDiff.swift in Sources */,
+				003AB21004E64DD4C5A6FEC26A8F3D64 /* DiffAware.swift in Sources */,
+				40A9BA809273A7E73D1CAD1C66AB1F04 /* Heckel.swift in Sources */,
+				AAA03A10FACE67E311715DE2241BE38A /* MoveReducer.swift in Sources */,
+				9D91D662F40243107216AB70D179F4A1 /* WagnerFischer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D80ED941A6C368AC6B3934560B4D8FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B773411A251BBC0FE1234579025F2FAA /* Pods-transmitRemote-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3AE12C0E1BC26924929F649FEF2BAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F810C9846777D9B2AB74DB6EA011C953 /* Pods-transmitRemoteUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA3F39B440C8533EC1AE3B8D810042C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4D7705C76EB5288034A23F62C13BEA /* Pods-transmitRemoteTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34D70C7949D60951C8F9DA8BEA1D1DEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-transmitRemote";
+			target = 575A2767818B8485F30A184C1715B08D /* Pods-transmitRemote */;
+			targetProxy = 395E679F9591B84265C0E03EA0F609F9 /* PBXContainerItemProxy */;
+		};
+		6163CDDA469C3801D6D23C6F773A3504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-transmitRemote";
+			target = 575A2767818B8485F30A184C1715B08D /* Pods-transmitRemote */;
+			targetProxy = DEE2213C51BF21C5210773EB703063B0 /* PBXContainerItemProxy */;
+		};
+		6A58383A22BE2E5431D96158CA6B3161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DeepDiff;
+			target = 2D0D000DDE842320EDBA73D48DEA0324 /* DeepDiff */;
+			targetProxy = A3DAF0CA0D33C911B649893361D4D7A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05540E34D31A4C6FCDCDCA60D1386291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536566BF8CF9EA33326C8490C418DAAA /* Pods-transmitRemote.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-transmitRemote/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-transmitRemote/Pods-transmitRemote.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		20ADADBF6997B4F6FF79273E6260FA63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B93C5C7671A4E2C77E22609908B2D0 /* Pods-transmitRemoteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-transmitRemoteTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-transmitRemoteTests/Pods-transmitRemoteTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F0D72F7A43AD4EFFDEF3588F45E0991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		631E861B7BB83D6842DCC488DC027974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80217A94D46B95FD703378648E6DF45A /* DeepDiff.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/DeepDiff/DeepDiff-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeepDiff/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/DeepDiff/DeepDiff.modulemap";
+				PRODUCT_MODULE_NAME = DeepDiff;
+				PRODUCT_NAME = DeepDiff;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78B91802198E73CFA73D26CB65AABADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5523D5C6F34AE6938CA2FC6C985343 /* Pods-transmitRemoteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-transmitRemoteTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-transmitRemoteTests/Pods-transmitRemoteTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		991305DC50D7C43C7965FDDBE9210CB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80217A94D46B95FD703378648E6DF45A /* DeepDiff.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/DeepDiff/DeepDiff-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeepDiff/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/DeepDiff/DeepDiff.modulemap";
+				PRODUCT_MODULE_NAME = DeepDiff;
+				PRODUCT_NAME = DeepDiff;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F3C1100D4DD5267DB57459460A2917A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0FDBBEC4B7F1DF19DB43322FA111D5 /* Pods-transmitRemoteUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-transmitRemoteUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-transmitRemoteUITests/Pods-transmitRemoteUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9FB373ADD169F331162507A3E5856D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CEC6605856E6C94FF7DF5B0FEBF9CD5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82ABA33138B28D4775F3F01F51451FB0 /* Pods-transmitRemote.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-transmitRemote/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-transmitRemote/Pods-transmitRemote.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D77A1F9E2657FFD39627729D49122A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE085104FC988BBE400F21FF1E357555 /* Pods-transmitRemoteUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-transmitRemoteUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-transmitRemoteUITests/Pods-transmitRemoteUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2752BBA32298A84D5909739F276EE07A /* Build configuration list for PBXNativeTarget "Pods-transmitRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC6605856E6C94FF7DF5B0FEBF9CD5D /* Debug */,
+				05540E34D31A4C6FCDCDCA60D1386291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0D72F7A43AD4EFFDEF3588F45E0991 /* Debug */,
+				C9FB373ADD169F331162507A3E5856D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D7E5101FE9130DEF13684266FF79C66 /* Build configuration list for PBXNativeTarget "Pods-transmitRemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F3C1100D4DD5267DB57459460A2917A /* Debug */,
+				D77A1F9E2657FFD39627729D49122A52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4076CB089390B7AE66AD599DDBC138E /* Build configuration list for PBXNativeTarget "DeepDiff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631E861B7BB83D6842DCC488DC027974 /* Debug */,
+				991305DC50D7C43C7965FDDBE9210CB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD17806EA35CE6A181353B3A968D31B8 /* Build configuration list for PBXNativeTarget "Pods-transmitRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78B91802198E73CFA73D26CB65AABADC /* Debug */,
+				20ADADBF6997B4F6FF79273E6260FA63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -7,9 +7,10 @@
 //
 
 import Cocoa
+import DeepDiff
 
 class ViewController: NSViewController {
-    
+
     @IBOutlet weak var tableView: NSTableView!
     
     var Torrents: [Torrent] = []
