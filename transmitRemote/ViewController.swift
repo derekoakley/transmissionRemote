@@ -53,7 +53,10 @@ class ViewController: NSViewController {
             torrentGet() { result in
                 if (result.count > 0)
                 {
+                    let oldItems = self.Torrents
                     self.Torrents = result
+                    let changes = diff(old: oldItems, new: self.Torrents)
+                    print(changes)
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }

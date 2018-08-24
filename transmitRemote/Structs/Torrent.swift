@@ -15,7 +15,7 @@ struct TorrentGetArgument: Decodable {
     let torrents: [Torrent]
 }
 
-struct Torrent: Decodable {
+struct Torrent: Decodable, Hashable {
     let id: Int
     let isFinished: Bool
     let name: String
