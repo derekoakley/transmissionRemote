@@ -39,17 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C2A873FB21283A36003B0F00 /* transmitRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = transmitRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A873FB21283A36003B0F00 /* transmissionRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = transmissionRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A873FE21283A36003B0F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2A8740021283A36003B0F00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2A8740221283A36003B0F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2A8740521283A36003B0F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2A8740721283A36003B0F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2A8740821283A36003B0F00 /* transmitRemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = transmitRemote.entitlements; sourceTree = "<group>"; };
-		C2A8740D21283A36003B0F00 /* transmitRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = transmitRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A8740D21283A36003B0F00 /* transmissionRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = transmissionRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A8741121283A36003B0F00 /* transmitRemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transmitRemoteTests.swift; sourceTree = "<group>"; };
 		C2A8741321283A36003B0F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2A8741821283A37003B0F00 /* transmitRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = transmitRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A8741821283A37003B0F00 /* transmissionRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = transmissionRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A8741C21283A37003B0F00 /* transmitRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transmitRemoteUITests.swift; sourceTree = "<group>"; };
 		C2A8741E21283A37003B0F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2A8742B21284033003B0F00 /* getTransmissionSessionId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getTransmissionSessionId.swift; sourceTree = "<group>"; };
@@ -98,9 +98,9 @@
 		C2A873FC21283A36003B0F00 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2A873FB21283A36003B0F00 /* transmitRemote.app */,
-				C2A8740D21283A36003B0F00 /* transmitRemoteTests.xctest */,
-				C2A8741821283A37003B0F00 /* transmitRemoteUITests.xctest */,
+				C2A873FB21283A36003B0F00 /* transmissionRemote.app */,
+				C2A8740D21283A36003B0F00 /* transmissionRemoteTests.xctest */,
+				C2A8741821283A37003B0F00 /* transmissionRemoteUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,9 +169,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2A873FA21283A36003B0F00 /* transmitRemote */ = {
+		C2A873FA21283A36003B0F00 /* transmissionRemote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2A8742121283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmitRemote" */;
+			buildConfigurationList = C2A8742121283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmissionRemote" */;
 			buildPhases = (
 				C2A873F721283A36003B0F00 /* Sources */,
 				C2A873F821283A36003B0F00 /* Frameworks */,
@@ -181,14 +181,14 @@
 			);
 			dependencies = (
 			);
-			name = transmitRemote;
+			name = transmissionRemote;
 			productName = transmitRemote;
-			productReference = C2A873FB21283A36003B0F00 /* transmitRemote.app */;
+			productReference = C2A873FB21283A36003B0F00 /* transmissionRemote.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C2A8740C21283A36003B0F00 /* transmitRemoteTests */ = {
+		C2A8740C21283A36003B0F00 /* transmissionRemoteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2A8742421283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmitRemoteTests" */;
+			buildConfigurationList = C2A8742421283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmissionRemoteTests" */;
 			buildPhases = (
 				C2A8740921283A36003B0F00 /* Sources */,
 				C2A8740A21283A36003B0F00 /* Frameworks */,
@@ -199,14 +199,14 @@
 			dependencies = (
 				C2A8740F21283A36003B0F00 /* PBXTargetDependency */,
 			);
-			name = transmitRemoteTests;
+			name = transmissionRemoteTests;
 			productName = transmitRemoteTests;
-			productReference = C2A8740D21283A36003B0F00 /* transmitRemoteTests.xctest */;
+			productReference = C2A8740D21283A36003B0F00 /* transmissionRemoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C2A8741721283A37003B0F00 /* transmitRemoteUITests */ = {
+		C2A8741721283A37003B0F00 /* transmissionRemoteUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2A8742721283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmitRemoteUITests" */;
+			buildConfigurationList = C2A8742721283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmissionRemoteUITests" */;
 			buildPhases = (
 				C2A8741421283A37003B0F00 /* Sources */,
 				C2A8741521283A37003B0F00 /* Frameworks */,
@@ -217,9 +217,9 @@
 			dependencies = (
 				C2A8741A21283A37003B0F00 /* PBXTargetDependency */,
 			);
-			name = transmitRemoteUITests;
+			name = transmissionRemoteUITests;
 			productName = transmitRemoteUITests;
-			productReference = C2A8741821283A37003B0F00 /* transmitRemoteUITests.xctest */;
+			productReference = C2A8741821283A37003B0F00 /* transmissionRemoteUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -250,7 +250,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C2A873F621283A35003B0F00 /* Build configuration list for PBXProject "transmitRemote" */;
+			buildConfigurationList = C2A873F621283A35003B0F00 /* Build configuration list for PBXProject "transmissionRemote" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,9 +263,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2A873FA21283A36003B0F00 /* transmitRemote */,
-				C2A8740C21283A36003B0F00 /* transmitRemoteTests */,
-				C2A8741721283A37003B0F00 /* transmitRemoteUITests */,
+				C2A873FA21283A36003B0F00 /* transmissionRemote */,
+				C2A8740C21283A36003B0F00 /* transmissionRemoteTests */,
+				C2A8741721283A37003B0F00 /* transmissionRemoteUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,12 +333,12 @@
 /* Begin PBXTargetDependency section */
 		C2A8740F21283A36003B0F00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C2A873FA21283A36003B0F00 /* transmitRemote */;
+			target = C2A873FA21283A36003B0F00 /* transmissionRemote */;
 			targetProxy = C2A8740E21283A36003B0F00 /* PBXContainerItemProxy */;
 		};
 		C2A8741A21283A37003B0F00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C2A873FA21283A36003B0F00 /* transmitRemote */;
+			target = C2A873FA21283A36003B0F00 /* transmissionRemote */;
 			targetProxy = C2A8741921283A37003B0F00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -520,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmitRemoteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/transmitRemote.app/Contents/MacOS/transmitRemote";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/transmissionRemote.app/Contents/MacOS/transmissionRemote";
 			};
 			name = Debug;
 		};
@@ -540,7 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmitRemoteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/transmitRemote.app/Contents/MacOS/transmitRemote";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/transmissionRemote.app/Contents/MacOS/transmissionRemote";
 			};
 			name = Release;
 		};
@@ -585,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2A873F621283A35003B0F00 /* Build configuration list for PBXProject "transmitRemote" */ = {
+		C2A873F621283A35003B0F00 /* Build configuration list for PBXProject "transmissionRemote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2A8741F21283A37003B0F00 /* Debug */,
@@ -594,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2A8742121283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmitRemote" */ = {
+		C2A8742121283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmissionRemote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2A8742221283A37003B0F00 /* Debug */,
@@ -603,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2A8742421283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmitRemoteTests" */ = {
+		C2A8742421283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmissionRemoteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2A8742521283A37003B0F00 /* Debug */,
@@ -612,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2A8742721283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmitRemoteUITests" */ = {
+		C2A8742721283A37003B0F00 /* Build configuration list for PBXNativeTarget "transmissionRemoteUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2A8742821283A37003B0F00 /* Debug */,
