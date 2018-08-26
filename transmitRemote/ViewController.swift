@@ -6,7 +6,7 @@
 //  Copyright © 2018 Derek Oakley. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 class ViewController: NSViewController {
     
@@ -75,6 +75,7 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        // One or two columns only and iterate through subviews, e.g. progress indicator.
         let tableCell = tableView.makeView(withIdentifier: (tableColumn?.identifier)!, owner: self) as! NSTableCellView
         if (tableColumn!.identifier == TableColumns.id) {
             tableCell.textField?.stringValue = Torrents[row].id.description
@@ -83,7 +84,8 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
         } else if (tableColumn!.identifier == TableColumns.totalSize) {
             tableCell.textField?.stringValue = Torrents[row].totalSize.description
         } else if (tableColumn!.identifier == TableColumns.percentDone) {
-            tableCell.textField?.stringValue = Torrents[row].percentDone.description
+            let progressIndicator = tableCell.subviews.first as! NSProgressIndicator
+            progressIndicator.doubleValue = Torrents[row].percentDone * 100
         }
         return tableCell
     }

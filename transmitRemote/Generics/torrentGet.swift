@@ -6,7 +6,7 @@
 //  Copyright © 2018 Derek Oakley. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 func torrentGet(completion: @escaping ([Torrent]) -> ()) {
     let endpoint = "http://192.168.1.11:9092/transmission/rpc"

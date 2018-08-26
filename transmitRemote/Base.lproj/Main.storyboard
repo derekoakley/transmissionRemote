@@ -842,23 +842,21 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="9oc-n2-2L2">
+                                                        <tableCellView misplaced="YES" id="9oc-n2-2L2">
                                                             <rect key="frame" x="395" y="1" width="64" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cep-t4-4nD">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="17"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="WzT-M1-78a">
-                                                                        <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
-                                                                </textField>
+                                                                <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="vIo-yK-v7a">
+                                                                    <rect key="frame" x="0.0" y="-1" width="64" height="20"/>
+                                                                </progressIndicator>
                                                             </subviews>
-                                                            <connections>
-                                                                <outlet property="textField" destination="Cep-t4-4nD" id="YPa-i9-sRG"/>
-                                                            </connections>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="vIo-yK-v7a" secondAttribute="bottom" id="9G1-Ms-oZn"/>
+                                                                <constraint firstItem="vIo-yK-v7a" firstAttribute="leading" secondItem="9oc-n2-2L2" secondAttribute="leading" id="ASf-cs-gSA"/>
+                                                                <constraint firstItem="vIo-yK-v7a" firstAttribute="top" secondItem="9oc-n2-2L2" secondAttribute="top" id="DVL-uY-TZK"/>
+                                                                <constraint firstItem="vIo-yK-v7a" firstAttribute="top" secondItem="9oc-n2-2L2" secondAttribute="top" id="UbU-E5-nRG"/>
+                                                                <constraint firstAttribute="trailing" secondItem="vIo-yK-v7a" secondAttribute="trailing" id="lN3-0m-wCY"/>
+                                                            </constraints>
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>

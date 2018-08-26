@@ -6,7 +6,7 @@
 //  Copyright © 2018 Derek Oakley. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 func getTransmissionSessionId(completion: @escaping (Bool) -> ()) {
     let endpoint = "http://192.168.1.11:9092/transmission/rpc"

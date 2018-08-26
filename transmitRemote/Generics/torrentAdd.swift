@@ -6,7 +6,7 @@
 //  Copyright © 2018 Derek Oakley. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 // TODO: Make generic
 func torrentAdd(filename: String, completion: @escaping (Bool) -> ()) {
