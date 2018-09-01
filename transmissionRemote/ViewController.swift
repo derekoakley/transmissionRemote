@@ -52,7 +52,7 @@ class ViewController: NSViewController {
             torrentGet() { result in
                 if (result.count > 0)
                 {
-                    self.Torrents = result
+                    self.Torrents = result                    
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
@@ -64,9 +64,7 @@ class ViewController: NSViewController {
 
 extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
     private struct TableColumns {
-        static let id = NSUserInterfaceItemIdentifier("id")
-        static let name = NSUserInterfaceItemIdentifier("name")
-        static let totalSize = NSUserInterfaceItemIdentifier("totalSize")
+        static let files = NSUserInterfaceItemIdentifier("files")
         static let percentDone = NSUserInterfaceItemIdentifier("percentDone")
     }
     
@@ -77,16 +75,21 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         // One or two columns only and iterate through subviews, e.g. progress indicator.
         let tableCell = tableView.makeView(withIdentifier: (tableColumn?.identifier)!, owner: self) as! NSTableCellView
-        if (tableColumn!.identifier == TableColumns.id) {
-            tableCell.textField?.stringValue = Torrents[row].id.description
-        } else if (tableColumn!.identifier == TableColumns.name) {
-            tableCell.textField?.stringValue = Torrents[row].name
-        } else if (tableColumn!.identifier == TableColumns.totalSize) {
-            tableCell.textField?.stringValue = Torrents[row].totalSize.description
-        } else if (tableColumn!.identifier == TableColumns.percentDone) {
-            let progressIndicator = tableCell.subviews.first as! NSProgressIndicator
-            progressIndicator.doubleValue = Torrents[row].percentDone * 100
+        
+        for view in tableCell.subviews {
+            print(view)
+            if (view.identifier == TableColumns.files) {
+                let imageView = view as! NSImageView
+                if (Torrents[row].files.count > 1) {
+                    imageView.image = NSWorkspace.shared.icon(forFileType: NSFileTypeForHFSTypeCode(OSType(kGenericFolderIcon)))
+                }
+            }
+            if (view.identifier == TableColumns.percentDone) {
+                let progressIndicator = view as! NSProgressIndicator
+                progressIndicator.doubleValue = Torrents[row].percentDone * 100
+            }
         }
+        
         return tableCell
     }
 }

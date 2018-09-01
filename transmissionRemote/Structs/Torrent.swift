@@ -19,6 +19,13 @@ struct Torrent: Decodable {
     let id: Int
     let isFinished: Bool
     let name: String
+    let files: [Files]
     let percentDone: Double
     let totalSize: Int
+}
+
+struct Files: Decodable {
+    let bytesCompleted: Int
+    let length: Int
+    let name: String
 }

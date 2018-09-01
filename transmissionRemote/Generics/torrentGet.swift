@@ -20,6 +20,7 @@ func torrentGet(completion: @escaping ([Torrent]) -> ()) {
                 "fields": [
                     "id",
                     "isFinished",
+                    "files",
                     "name",
                     "percentDone",
                     "totalSize"
