@@ -54,7 +54,7 @@ class ViewController: NSViewController {
                 {
                     self.Torrents = result                    
                     DispatchQueue.main.async {
-                        self.tableView.reloadData()
+                        self.tableView.reloadDataKeepingSelection()
                     }
                 }
             }
@@ -78,7 +78,6 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
         let tableCell = tableView.makeView(withIdentifier: (tableColumn?.identifier)!, owner: self) as! NSTableCellView
         
         for view in tableCell.subviews {
-            print(view)
             if (view.identifier == torrentSubViews.files) {
                 let imageView = view as! NSImageView
                 if (Torrents[row].files.count > 1) {
@@ -101,3 +100,10 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
     }
 }
 
+extension NSTableView {
+    func reloadDataKeepingSelection() {
+        let selectedRowIndexes = self.selectedRowIndexes
+        self.reloadData()
+        self.selectRowIndexes(selectedRowIndexes, byExtendingSelection: true)
+    }
+}
