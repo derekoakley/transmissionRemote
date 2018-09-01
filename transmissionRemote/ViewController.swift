@@ -65,6 +65,7 @@ class ViewController: NSViewController {
 extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
     private struct torrentSubViews {
         static let files = NSUserInterfaceItemIdentifier("files")
+        static let name = NSUserInterfaceItemIdentifier("name")
         static let percentDone = NSUserInterfaceItemIdentifier("percentDone")
     }
     
@@ -77,10 +78,17 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
         let tableCell = tableView.makeView(withIdentifier: (tableColumn?.identifier)!, owner: self) as! NSTableCellView
         
         for view in tableCell.subviews {
+            print(view)
             if (view.identifier == torrentSubViews.files) {
                 let imageView = view as! NSImageView
                 if (Torrents[row].files.count > 1) {
                     imageView.image = NSWorkspace.shared.icon(forFileType: NSFileTypeForHFSTypeCode(OSType(kGenericFolderIcon)))
+                }
+            }
+            if (view.identifier == torrentSubViews.name) {
+                let label = view as! NSTextField
+                if (Torrents[row].files.count > 1) {
+                    label.stringValue = Torrents[row].name
                 }
             }
             if (view.identifier == torrentSubViews.percentDone) {

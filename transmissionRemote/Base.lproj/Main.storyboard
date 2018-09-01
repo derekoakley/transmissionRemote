@@ -747,16 +747,40 @@
                                                             <rect key="frame" x="1" y="1" width="477" height="72"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <imageView identifier="files" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYF-ft-RyF">
-                                                                    <rect key="frame" x="16" y="12" width="48" height="48"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                <imageView identifier="files" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iYF-ft-RyF">
+                                                                    <rect key="frame" x="12" y="12" width="48" height="48"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="48" id="BfQ-XF-0a1"/>
+                                                                        <constraint firstAttribute="height" constant="48" id="jaN-NO-KhH"/>
+                                                                    </constraints>
                                                                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="wRh-vS-roS"/>
                                                                 </imageView>
-                                                                <progressIndicator identifier="percentDone" wantsLayer="YES" fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="vIo-yK-v7a">
-                                                                    <rect key="frame" x="99" y="26" width="142" height="20"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                <textField identifier="name" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WAI-c9-2U7">
+                                                                    <rect key="frame" x="66" y="43" width="394" height="17"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="390" id="UiM-xr-OBo"/>
+                                                                    </constraints>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Label" usesSingleLineMode="YES" id="Lr3-ap-bJB">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <progressIndicator identifier="percentDone" wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="vIo-yK-v7a">
+                                                                    <rect key="frame" x="68" y="19" width="390" height="20"/>
                                                                 </progressIndicator>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="vIo-yK-v7a" firstAttribute="top" secondItem="WAI-c9-2U7" secondAttribute="bottom" constant="5" id="5WC-1z-FXY"/>
+                                                                <constraint firstItem="iYF-ft-RyF" firstAttribute="centerY" secondItem="Oz1-3p-aLO" secondAttribute="centerY" id="7Ho-I8-8uO"/>
+                                                                <constraint firstItem="iYF-ft-RyF" firstAttribute="leading" secondItem="Oz1-3p-aLO" secondAttribute="leading" constant="12" id="Bbb-gN-SZs"/>
+                                                                <constraint firstAttribute="trailing" secondItem="vIo-yK-v7a" secondAttribute="trailing" constant="19" id="OTI-ta-6XD"/>
+                                                                <constraint firstItem="vIo-yK-v7a" firstAttribute="leading" secondItem="WAI-c9-2U7" secondAttribute="leading" id="dOb-KO-401"/>
+                                                                <constraint firstItem="WAI-c9-2U7" firstAttribute="leading" secondItem="iYF-ft-RyF" secondAttribute="trailing" constant="8" symbolic="YES" id="jUG-gD-9Jp"/>
+                                                                <constraint firstAttribute="trailing" secondItem="WAI-c9-2U7" secondAttribute="trailing" constant="19" id="mCd-LU-004"/>
+                                                                <constraint firstItem="WAI-c9-2U7" firstAttribute="top" secondItem="Oz1-3p-aLO" secondAttribute="top" constant="12" id="mwc-VR-KF9"/>
+                                                                <constraint firstItem="WAI-c9-2U7" firstAttribute="top" secondItem="iYF-ft-RyF" secondAttribute="top" id="qpY-3X-rK4"/>
+                                                            </constraints>
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
