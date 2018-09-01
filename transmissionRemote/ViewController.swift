@@ -63,12 +63,6 @@ class ViewController: NSViewController {
 }
 
 extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
-    private struct torrentSubViews {
-        static let files = NSUserInterfaceItemIdentifier("files")
-        static let name = NSUserInterfaceItemIdentifier("name")
-        static let percentDone = NSUserInterfaceItemIdentifier("percentDone")
-    }
-    
     func numberOfRows(in tableView: NSTableView) -> Int {
         return Torrents.count
     }
@@ -93,10 +87,22 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
             if (view.identifier == torrentSubViews.percentDone) {
                 let progressIndicator = view as! NSProgressIndicator
                 progressIndicator.doubleValue = Torrents[row].percentDone * 100
+                if (Torrents[row].isFinished) {
+                    progressIndicator.contentFilters = [hueAdjust.green]
+                }
             }
         }
-        
         return tableCell
+    }
+    
+    private struct torrentSubViews {
+        static let files = NSUserInterfaceItemIdentifier("files")
+        static let name = NSUserInterfaceItemIdentifier("name")
+        static let percentDone = NSUserInterfaceItemIdentifier("percentDone")
+    }
+    
+    private struct hueAdjust {
+        static let green = CIFilter(name: "CIHueAdjust", withInputParameters: ["inputAngle": NSNumber(value: 4)])!
     }
 }
 

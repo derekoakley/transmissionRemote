@@ -755,7 +755,7 @@
                                                                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="bpV-mJ-C1F"/>
                                                                 </imageView>
                                                                 <textField identifier="name" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="RCT-Sf-xhz">
-                                                                    <rect key="frame" x="72" y="45" width="385" height="17"/>
+                                                                    <rect key="frame" x="72" y="45" width="397" height="17"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Oub-Ht-MAr">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -763,19 +763,19 @@
                                                                     </textFieldCell>
                                                                 </textField>
                                                                 <progressIndicator identifier="percentDone" wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="6d4-HX-KuN">
-                                                                    <rect key="frame" x="74" y="18" width="381" height="20"/>
+                                                                    <rect key="frame" x="74" y="18" width="393" height="20"/>
                                                                 </progressIndicator>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="6d4-HX-KuN" firstAttribute="trailing" secondItem="RCT-Sf-xhz" secondAttribute="trailing" id="0dR-p4-xOf"/>
-                                                                <constraint firstItem="6d4-HX-KuN" firstAttribute="top" secondItem="RCT-Sf-xhz" secondAttribute="bottom" constant="8" symbolic="YES" id="3Cx-7M-PSE"/>
-                                                                <constraint firstItem="Cf4-vD-t52" firstAttribute="centerY" secondItem="nm4-rh-ZRk" secondAttribute="centerY" id="8bW-XF-hrn"/>
-                                                                <constraint firstItem="6d4-HX-KuN" firstAttribute="leading" secondItem="RCT-Sf-xhz" secondAttribute="leading" id="FSv-4K-C93"/>
-                                                                <constraint firstItem="RCT-Sf-xhz" firstAttribute="leading" secondItem="Cf4-vD-t52" secondAttribute="trailing" constant="12" id="Jo5-xv-KIF"/>
-                                                                <constraint firstAttribute="trailing" secondItem="6d4-HX-KuN" secondAttribute="trailing" constant="24" id="Mei-03-O7K"/>
-                                                                <constraint firstItem="Cf4-vD-t52" firstAttribute="top" secondItem="nm4-rh-ZRk" secondAttribute="top" constant="14" id="eG2-to-1MG"/>
-                                                                <constraint firstItem="Cf4-vD-t52" firstAttribute="top" secondItem="RCT-Sf-xhz" secondAttribute="top" id="hOV-Ii-VKb"/>
-                                                                <constraint firstItem="Cf4-vD-t52" firstAttribute="leading" secondItem="nm4-rh-ZRk" secondAttribute="leading" constant="14" id="jLM-k0-2WO"/>
+                                                                <constraint firstItem="Cf4-vD-t52" firstAttribute="leading" secondItem="nm4-rh-ZRk" secondAttribute="leading" constant="14" id="0du-xg-9NG"/>
+                                                                <constraint firstItem="6d4-HX-KuN" firstAttribute="leading" secondItem="RCT-Sf-xhz" secondAttribute="leading" id="IEK-BZ-szq"/>
+                                                                <constraint firstItem="RCT-Sf-xhz" firstAttribute="top" secondItem="Cf4-vD-t52" secondAttribute="top" id="XXO-Kr-CSY"/>
+                                                                <constraint firstItem="6d4-HX-KuN" firstAttribute="trailing" secondItem="RCT-Sf-xhz" secondAttribute="trailing" id="deh-eH-4ra"/>
+                                                                <constraint firstAttribute="trailing" secondItem="6d4-HX-KuN" secondAttribute="trailing" constant="12" id="eY6-00-uel"/>
+                                                                <constraint firstItem="Cf4-vD-t52" firstAttribute="centerY" secondItem="nm4-rh-ZRk" secondAttribute="centerY" id="ixV-dg-aI0"/>
+                                                                <constraint firstItem="Cf4-vD-t52" firstAttribute="top" secondItem="nm4-rh-ZRk" secondAttribute="top" constant="14" id="k0a-ne-CZh"/>
+                                                                <constraint firstItem="RCT-Sf-xhz" firstAttribute="leading" secondItem="Cf4-vD-t52" secondAttribute="trailing" constant="12" id="vZV-BR-96G"/>
+                                                                <constraint firstItem="6d4-HX-KuN" firstAttribute="top" secondItem="RCT-Sf-xhz" secondAttribute="bottom" constant="8" symbolic="YES" id="z8j-zh-iC4"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="textField" destination="RCT-Sf-xhz" id="cqF-EL-NUu"/>
