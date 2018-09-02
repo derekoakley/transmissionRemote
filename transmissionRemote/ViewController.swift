@@ -52,7 +52,7 @@ class ViewController: NSViewController {
             GetTorrents() { result in
                 if (result.count > 0)
                 {
-                    self.Torrents = result                    
+                    self.Torrents = result
                     DispatchQueue.main.async {
                         self.tableView.reloadDataKeepingSelection()
                     }
@@ -76,19 +76,33 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
                 let imageView = view as! NSImageView
                 if (Torrents[row].files.count > 1) {
                     imageView.image = NSWorkspace.shared.icon(forFileType: NSFileTypeForHFSTypeCode(OSType(kGenericFolderIcon)))
+                } else {
+                    imageView.image = NSWorkspace.shared.icon(forFileType: URL(fileURLWithPath: (Torrents[row].files.first?.name)!).pathExtension)
                 }
             }
             if (view.identifier == torrentSubViews.name) {
-                let label = view as! NSTextField
-                if (Torrents[row].files.count > 1) {
-                    label.stringValue = Torrents[row].name
-                }
+                let textField = view as! NSTextField
+                textField.stringValue = Torrents[row].name
             }
             if (view.identifier == torrentSubViews.percentDone) {
                 let progressIndicator = view as! NSProgressIndicator
                 progressIndicator.doubleValue = Torrents[row].percentDone * 100
+                progressIndicator.isIndeterminate = false
                 if (Torrents[row].isFinished) {
                     progressIndicator.contentFilters = [AdjustHue.Green]
+                }
+            }
+            if (view.identifier == torrentSubViews.status) {
+                let textField = view as! NSTextField
+                if (Torrents[row].eta >= 0) {
+                    let formatter = DateComponentsFormatter()
+                    formatter.unitsStyle = .full
+                    formatter.includesApproximationPhrase = true
+                    formatter.includesTimeRemainingPhrase = true
+                    formatter.allowedUnits = [.day, .hour, .minute]
+                    textField.stringValue = formatter.string(from: Torrents[row].eta)!
+                } else {
+                  textField.stringValue = "Unknown"
                 }
             }
         }
@@ -99,6 +113,7 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
         static let files = NSUserInterfaceItemIdentifier("files")
         static let name = NSUserInterfaceItemIdentifier("name")
         static let percentDone = NSUserInterfaceItemIdentifier("percentDone")
+        static let status = NSUserInterfaceItemIdentifier("status")
     }
 }
 

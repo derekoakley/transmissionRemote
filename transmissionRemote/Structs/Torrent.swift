@@ -6,6 +6,8 @@
 //  Copyright © 2018 Derek Oakley. All rights reserved.
 //
 
+import AppKit
+
 struct TorrentGet: Decodable {
     let arguments: TorrentGetArgument
     let result: String
@@ -16,10 +18,11 @@ struct TorrentGetArgument: Decodable {
 }
 
 struct Torrent: Decodable {
+    let eta: TimeInterval
+    let files: [Files]
     let id: Int
     let isFinished: Bool
     let name: String
-    let files: [Files]
     let percentDone: Double
     let totalSize: Int
 }

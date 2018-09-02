@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C23BF224213C68A300F596D3 /* Eta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BF223213C68A300F596D3 /* Eta.swift */; };
 		C2A873FF21283A36003B0F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A873FE21283A36003B0F00 /* AppDelegate.swift */; };
 		C2A8740121283A36003B0F00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8740021283A36003B0F00 /* ViewController.swift */; };
 		C2A8740321283A36003B0F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A8740221283A36003B0F00 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C23BF223213C68A300F596D3 /* Eta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eta.swift; sourceTree = "<group>"; };
 		C2A873FB21283A36003B0F00 /* Transmission Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transmission Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A873FE21283A36003B0F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2A8740021283A36003B0F00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C23BF222213C688800F596D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C23BF223213C68A300F596D3 /* Eta.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C2A873F221283A35003B0F00 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		C2A873FD21283A36003B0F00 /* transmissionRemote */ = {
 			isa = PBXGroup;
 			children = (
+				C23BF222213C688800F596D3 /* Extensions */,
 				C2A8743421285CE1003B0F00 /* Classes */,
 				C2A8742A21284014003B0F00 /* Generics */,
 				C2A8743121284D93003B0F00 /* Structs */,
@@ -304,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23BF224213C68A300F596D3 /* Eta.swift in Sources */,
 				C2A8740121283A36003B0F00 /* ViewController.swift in Sources */,
 				C2A8742E212840DB003B0F00 /* TorrentGet.swift in Sources */,
 				C2A87438212887FF003B0F00 /* SessionStats.swift in Sources */,

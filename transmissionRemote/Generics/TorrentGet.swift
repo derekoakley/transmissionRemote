@@ -18,9 +18,10 @@ func GetTorrents(completion: @escaping ([Torrent]) -> ()) {
         {
             "arguments": {
                 "fields": [
+                    "eta",
+                    "files",
                     "id",
                     "isFinished",
-                    "files",
                     "name",
                     "percentDone",
                     "totalSize"
