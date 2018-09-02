@@ -19,14 +19,14 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        NotificationCenter.default.addObserver(self, selector: #selector(torrentGetAndUpdateTableView), name: Notification.Name("torrentGetAndUpdateTableView"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(GetTorrentsAndUpdateTableView), name: Notification.Name("GetTorrentsAndUpdateTableView"), object: nil)
         
         timer = DispatchSource.makeTimerSource()
         timer.schedule(deadline: .now(), repeating: .seconds(5), leeway: .seconds(5))
         timer.setEventHandler {
-            self.torrentGetAndUpdateTableView()
+            self.GetTorrentsAndUpdateTableView()
         }
-        torrentGetAndUpdateTableView()
+        GetTorrentsAndUpdateTableView()
         
         // TODO: Try DispatchQueue.main.async everywhere
     }
@@ -47,9 +47,9 @@ class ViewController: NSViewController {
         }
     }
     
-    @objc private func torrentGetAndUpdateTableView() {
-        getTransmissionSessionId() { result in
-            torrentGet() { result in
+    @objc private func GetTorrentsAndUpdateTableView() {
+        GetTransmissionSessionId() { result in
+            GetTorrents() { result in
                 if (result.count > 0)
                 {
                     self.Torrents = result                    
@@ -88,7 +88,7 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
                 let progressIndicator = view as! NSProgressIndicator
                 progressIndicator.doubleValue = Torrents[row].percentDone * 100
                 if (Torrents[row].isFinished) {
-                    progressIndicator.contentFilters = [hueAdjust.green]
+                    progressIndicator.contentFilters = [AdjustHue.Green]
                 }
             }
         }
@@ -99,10 +99,6 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
         static let files = NSUserInterfaceItemIdentifier("files")
         static let name = NSUserInterfaceItemIdentifier("name")
         static let percentDone = NSUserInterfaceItemIdentifier("percentDone")
-    }
-    
-    private struct hueAdjust {
-        static let green = CIFilter(name: "CIHueAdjust", withInputParameters: ["inputAngle": NSNumber(value: 4)])!
     }
 }
 

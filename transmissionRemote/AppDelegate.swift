@@ -42,10 +42,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc private func handleGetURLEvent(event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
         let urlString = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))?.stringValue!
-        getTransmissionSessionId() { result in
-            torrentAdd(filename: urlString!) { result in
+        GetTransmissionSessionId() { result in
+            AddTorrent(filename: urlString!) { result in
                 if (result == true) {
-                    NotificationCenter.default.post(name: Notification.Name("torrentGetAndUpdateTableView"), object: nil)
+                    NotificationCenter.default.post(name: Notification.Name("GetTorrentsAndUpdateTableView"), object: nil)
                 }
             }
         }

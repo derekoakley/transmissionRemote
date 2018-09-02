@@ -1,5 +1,5 @@
 //
-//  torrentAdd.swift
+//  updateTransmissionSessionId.swift
 //  transmitRemote
 //
 //  Created by Derek Oakley on 18/08/2018.
@@ -8,32 +8,24 @@
 
 import AppKit
 
-// TODO: Make generic
-func sessionStats(completion: @escaping (SessionStatsArgument) -> ()) {
+func GetTransmissionSessionId(completion: @escaping (Bool) -> ()) {
     let endpoint = "http://192.168.1.11:9092/transmission/rpc"
     let endpointUrl = URL(string: endpoint)!
     
     var request = URLRequest(url: endpointUrl)
     request.httpMethod = "POST"
-    request.httpBody = """
-        {
-            "method": "session-stats"
-        }
-        """.data(using: .utf8)
     
     let transmissionSessionId = UserDefaults.standard.string(forKey: "transmissionSessionId")  ?? ""
     request.addValue(transmissionSessionId, forHTTPHeaderField: "X-Transmission-Session-Id")
     
     URLSession.shared.dataTask(with: request) { (data, response, error) in
         if let httpResponse = response as? HTTPURLResponse {
+            if (httpResponse.statusCode == 409) {
+                UserDefaults.standard.set(httpResponse.allHeaderFields[AnyHashable("X-Transmission-Session-Id")] as! String, forKey: "transmissionSessionId")
+                completion(true)
+            }
             if (httpResponse.statusCode == 200) {
-                do {
-                    let result = try JSONDecoder().decode(SessionStats.self, from: data!)
-                    print(result.arguments)
-                    completion(result.arguments)
-                } catch {
-                    print(error)
-                }
+                completion(true)
             }
         }
     }.resume()

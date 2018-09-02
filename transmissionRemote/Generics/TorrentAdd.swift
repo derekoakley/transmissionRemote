@@ -1,5 +1,5 @@
 //
-//  torrentGet.swift
+//  AddTorrent.swift
 //  transmitRemote
 //
 //  Created by Derek Oakley on 18/08/2018.
@@ -8,7 +8,8 @@
 
 import AppKit
 
-func torrentGet(completion: @escaping ([Torrent]) -> ()) {
+// TODO: Make generic
+func AddTorrent(filename: String, completion: @escaping (Bool) -> ()) {
     let endpoint = "http://192.168.1.11:9092/transmission/rpc"
     let endpointUrl = URL(string: endpoint)!
     
@@ -17,16 +18,9 @@ func torrentGet(completion: @escaping ([Torrent]) -> ()) {
     request.httpBody = """
         {
             "arguments": {
-                "fields": [
-                    "id",
-                    "isFinished",
-                    "files",
-                    "name",
-                    "percentDone",
-                    "totalSize"
-                ]
+                "filename": "\(filename)"
             },
-            "method": "torrent-get"
+            "method": "torrent-add"
         }
         """.data(using: .utf8)
     
@@ -36,13 +30,10 @@ func torrentGet(completion: @escaping ([Torrent]) -> ()) {
     URLSession.shared.dataTask(with: request) { (data, response, error) in
         if let httpResponse = response as? HTTPURLResponse {
             if (httpResponse.statusCode == 200) {
-                do {
-                    let result = try JSONDecoder().decode(TorrentGet.self, from: data!)
-                    completion(result.arguments.torrents)
-                } catch {
-                    print(error)
-                    completion([])
-                }
+                completion(true)
+            }
+            else {
+                completion(false)
             }
         }
     }.resume()
