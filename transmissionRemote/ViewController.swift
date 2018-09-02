@@ -76,8 +76,8 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
                 let imageView = view as! NSImageView
                 if (Torrents[row].files.count > 1) {
                     imageView.image = NSWorkspace.shared.icon(forFileType: NSFileTypeForHFSTypeCode(OSType(kGenericFolderIcon)))
-                } else {
-                    imageView.image = NSWorkspace.shared.icon(forFileType: URL(fileURLWithPath: (Torrents[row].files.first?.name)!).pathExtension)
+                } else if (Torrents[row].files.count == 1) {
+                    imageView.image = NSWorkspace.shared.icon(forFileType: NSURL(fileURLWithPath: (Torrents[row].files.first?.name)!).pathExtension!)
                 }
             }
             if (view.identifier == torrentSubViews.name) {
@@ -100,7 +100,9 @@ extension ViewController: NSTableViewDataSource, NSTableViewDelegate {
                     formatter.includesApproximationPhrase = true
                     formatter.includesTimeRemainingPhrase = true
                     formatter.allowedUnits = [.day, .hour, .minute]
-                    textField.stringValue = formatter.string(from: Torrents[row].eta)!
+                    
+                    let outputString = formatter.string(from: Torrents[row].eta)
+                    textField.stringValue = outputString!
                 } else {
                   textField.stringValue = "Unknown"
                 }
