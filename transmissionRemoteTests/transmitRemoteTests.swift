@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import transmitRemote
+//@testable import transmissionRemote
 
-class transmitRemoteTests: XCTestCase {
+class transmissionRemoteTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

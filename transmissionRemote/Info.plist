@@ -24,7 +24,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.derekoakley.transmitRemote.magnet</string>
+			<string>com.derekoakley.transmissionRemote.magnet</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>magnet</string>

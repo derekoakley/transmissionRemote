@@ -9,5 +9,5 @@
 import AppKit
 
 struct AdjustHue {
-    static let Green = CIFilter(name: "CIHueAdjust", withInputParameters: ["inputAngle": NSNumber(value: 4)])!
+    static let Green = CIFilter(name: "CIHueAdjust", parameters: ["inputAngle": NSNumber(value: 4)])!
 }

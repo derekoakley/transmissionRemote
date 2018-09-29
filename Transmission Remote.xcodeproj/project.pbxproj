@@ -248,6 +248,7 @@
 				TargetAttributes = {
 					C2A873FA21283A36003B0F00 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -256,10 +257,12 @@
 					};
 					C2A8740C21283A36003B0F00 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = C2A873FA21283A36003B0F00;
 					};
 					C2A8741721283A37003B0F00 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = C2A873FA21283A36003B0F00;
 					};
 				};
@@ -498,7 +501,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmissionRemote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -516,7 +519,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmissionRemote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -527,15 +530,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = transmitRemoteTests/Info.plist;
+				INFOPLIST_FILE = transmissionRemoteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmitRemoteTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmissionRemoteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transmission Remote.app/Contents/MacOS/Transmission Remote";
 			};
 			name = Debug;
@@ -547,15 +550,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = transmitRemoteTests/Info.plist;
+				INFOPLIST_FILE = transmissionRemoteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmitRemoteTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmissionRemoteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Transmission Remote.app/Contents/MacOS/Transmission Remote";
 			};
 			name = Release;
@@ -566,15 +569,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = transmitRemoteUITests/Info.plist;
+				INFOPLIST_FILE = transmissionRemoteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmitRemoteUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmissionRemoteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = transmitRemote;
 			};
 			name = Debug;
@@ -585,15 +588,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = transmitRemoteUITests/Info.plist;
+				INFOPLIST_FILE = transmissionRemoteUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmitRemoteUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekoakley.transmissionRemoteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = transmitRemote;
 			};
 			name = Release;

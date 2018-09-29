@@ -8,7 +8,7 @@
 
 import XCTest
 
-class transmitRemoteUITests: XCTestCase {
+class transmissionRemoteUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
